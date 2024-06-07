@@ -6,13 +6,19 @@
 }
 
 body{
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .body-contato{
     background-color:rgb(139, 253, 253);
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .apresentacao{
@@ -84,13 +90,24 @@ header a{
 }
 
 .container-motivos{
-    padding: 70px 15%;
+    min-height: 200px;
+    padding: 70px 10%;
     margin-bottom: 100px;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.card{
+.container-motivos h2{
+    width: 100%;
+    text-align: center;
+}
+
+.card-a{
+    display: inline-block;
     width: 31%;
+}
+.card{
     display: inline-block;
     background-color: rgb(13, 117, 117) ;
     margin-bottom: 15px;
@@ -118,6 +135,7 @@ header a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .input{
@@ -164,7 +182,7 @@ header a{
 
 footer{
     background-color: rgb(13, 117, 117);
-    padding: 40px;
+    padding: 25px;
     width: 100;
     text-align: center;
 }
@@ -173,16 +191,12 @@ footer{
     padding: 40px;
     width: 100%;
     text-align: center;
-    position: fixed;
-    bottom: 0%;
 }
 #footer-sobre{
     background-color: rgb(13, 117, 117);
-    padding: 40px;
+    padding: 25px;
     width: 100%;
     text-align: center;
-    position: fixed;
-    bottom: 0%;
 }
 
 #form{
