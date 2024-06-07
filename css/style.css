@@ -6,6 +6,7 @@
 }
 
 body{
+    max-width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,16 +15,20 @@ body{
 
 .body-contato{
     background-color:rgb(139, 253, 253);
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: center;
 }
 
 .apresentacao{
     padding: 70px 15%;
     margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 header{
@@ -42,6 +47,9 @@ header a{
    
     padding: 70px 15%;
     margin-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .titulo-introducao{
@@ -57,12 +65,18 @@ header a{
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
     background-color: rgb(139, 253, 253);
 }
 
 .container-form{
+    max-width: 100%;
     background-color:rgb(139, 253, 253);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -96,6 +110,7 @@ header a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .container-motivos h2{
@@ -131,6 +146,7 @@ header a{
 }
 
 .containerforms{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +204,7 @@ footer{
 }
 #footer-contato{
     background-color: rgb(13, 117, 117);
-    padding: 40px;
+    padding: 25px;
     width: 100%;
     text-align: center;
 }
@@ -203,5 +219,5 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 75%;
+    align-items: center;
 }
